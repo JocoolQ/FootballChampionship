@@ -8,7 +8,7 @@ Application for a small Football Championship that allows to register teams, mat
 
 ## Requirements
 
-# 1) Install Python
+### 1) Install Python
 
  - Windows
    
@@ -26,7 +26,7 @@ Application for a small Football Championship that allows to register teams, mat
    $ sudo apt-get install python3.6
 
   
-# 2) Install Flask
+### 2) Install Flask
   
   Once you have completed your Python install, you can proceed to install the Flask Framework on your computer.
   
