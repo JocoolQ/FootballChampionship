@@ -32,15 +32,15 @@ Application for a small Football Championship that allows to register teams, mat
   
   - Windows
    
-   Go to your Command Line (CMD)  and execute the following command:
+    Go to your Command Line (CMD)  and execute the following command:
    
-   pip install flask
+    pip install flask
    
- - Linux
- 
-   Go to the terminal and execute the following command:
+  - Linux
    
-   $ pip install flask
+    Go to the terminal and execute the following command:
+     
+    $ pip install flask
   
 ## Instructions
 
