@@ -1,0 +1,42 @@
+{# Creative Commons (CC) 2020 Jonathan Steven Capera Quintana#}
+
+{# This program is free software: you can redistribute it and/or modify #}
+{# it under the terms of the GNU General Public License as published by #}
+{# the Free Software Foundation, either version 3 of the License, or #}
+{# (at your option) any later version. #}
+
+{# This program is distributed in the hope that it will be useful, #}
+{# but WITHOUT ANY WARRANTY; without even the implied warranty of #}
+{# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the #}
+{# GNU General Public License for more details. #}
+
+{% extends "index.html" %}
+{% block body %}
+<div class=registerMatches>
+	<form class="pure-form pure-form-stacked" action="{{ url_for('positionsTable') }}" method=post>
+		<pre>Please register the information about matches:</pre>
+		<!--<pre>Seconds taken: {{ time }}</pre>-->
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Team 1</th>
+						<th>Goals Scored</th>
+						<th>Team 2</th>
+						<th>Goals Scored</th>
+					</tr>	
+				</thead>
+				<tbody>
+					{% for match in matches %}
+						<tr>
+							<td> {{match[0]}}</td>
+							<td><input id="goalsT1M{{matches.index(match)}}" name="goalsT1M{{matches.index(match)}}"+ type="number" min="0" required></td>
+							<td> {{match[1]}}</td>
+							<td><input id="goalsT2M{{matches.index(match)}}" name="goalsT2M{{matches.index(match)}}"+ type="number" min="0" required></td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		<button type="submit" class="pure-button pure-button-primary">Done</button>
+	</form>
+</div>
+{% endblock %}

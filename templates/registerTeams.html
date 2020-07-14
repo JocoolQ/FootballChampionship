@@ -1,0 +1,39 @@
+{# Creative Commons (CC) 2020 Jonathan Steven Capera Quintana#}
+
+{# This program is free software: you can redistribute it and/or modify #}
+{# it under the terms of the GNU General Public License as published by #}
+{# the Free Software Foundation, either version 3 of the License, or #}
+{# (at your option) any later version. #}
+
+{# This program is distributed in the hope that it will be useful, #}
+{# but WITHOUT ANY WARRANTY; without even the implied warranty of #}
+{# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the #}
+{# GNU General Public License for more details. #}
+
+{% extends "index.html" %}
+{% block body %}
+<div class=registerTeams>
+	<form class="pure-form pure-form-stacked" action="{{ url_for('registerMatches') }}" method=post>
+		<pre>Number of teams: {{ n }}</pre>
+		<pre>Please register the information about teams:</pre>
+		<!--<pre>Seconds taken: {{ time }}</pre>-->
+			<table class="pure-table pure-table-bordered">
+				<thead>
+					<tr>
+						<th>Team</th>
+						<th colspan="8">Name</th>
+					</tr>	
+				</thead>
+				<tbody>
+					{% for i in range(1, n+1) %}
+					<tr>
+						<td> Team {{i}}</td>
+						<td><input id="team{{i}}" name="team{{i}}"+ type="text"></td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		<button type="submit" class="pure-button pure-button-primary">Done</button>
+	</form>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{# Creative Commons (CC) 2020 Jonathan Steven Capera Quintana #}
+
+{# This program is free software: you can redistribute it and/or modify #}
+{# it under the terms of the GNU General Public License as published by #}
+{# the Free Software Foundation, either version 3 of the License, or #}
+{# (at your option) any later version. #}
+
+{# This program is distributed in the hope that it will be useful, #}
+{# but WITHOUT ANY WARRANTY; without even the implied warranty of #}
+{# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the #}
+{# GNU General Public License for more details. #}
+
+{# You should have received a copy of the GNU General Public License #}
+{# along with this program.  If not, see <http://www.gnu.org/licenses/>. #}
+
+{% extends "index.html" %}
+{% block body %}
+<form class="pure-form pure-form-stacked" action="{{ url_for('index') }}" method=post>
+	<label for="teams">
+	Please register the number of teams that will particitipate in the Championship:
+	</label>
+	<input id="teams" name="teams" type="number" min="2" required>
+	<button type="submit" class="pure-button pure-button-primary">Go</button>
+</form>
+{% endblock %}
