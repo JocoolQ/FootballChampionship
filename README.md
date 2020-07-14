@@ -56,11 +56,11 @@ Application for a small Football Championship that allows to register teams, mat
    
    $ python app.py
    
-  After you run the app the default url for accessing the app is the following:
+After you run the app the default url for accessing the app is the following:
     
     http://127.0.0.1:5000/
   
-  Copy the link in your web browser and it directs you to the application index.
+Copy the link in your web browser and it directs you to the application index.
 
 ## License
 
