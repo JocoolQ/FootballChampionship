@@ -23,6 +23,7 @@ Application for a small Football Championship that allows to register teams, mat
    In other case, you can execute this commands for installing Python on your computer:
    
    $ sudo apt-get update
+   
    $ sudo apt-get install python3.6
 
   
